@@ -32,25 +32,32 @@
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
 
-            <?php
-            // Php script syns inte på klienten, de körs på servern efter att klienten har bett om ett dokument
-            // phpinfo();
-            
-            /* Uppg 1 - Systemareorna och superglobals */
-            print("<p>Servern snurrar på port " . $_SERVER['SERVER_PORT'] . ", som vanligt med https och apache."); 
-
-            ?>
-
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
                 <h2>Bloggen - Inlägg 1</h2>
+                <?php
+                // Php script syns inte på klienten, de körs på servern efter att klienten har bett om ett dokument
+                // phpinfo();
+
+                /* Uppg 1 - Systemareorna och superglobals */
+                print("<p>Servern snurrar på port " . $_SERVER['SERVER_PORT'] . ", som vanligt med https och apache.");
+
+                ?>
                 <p>Denapappas memoarer</p>
             </article>
             <div class="separator"></div>
 
             <article>
-                <h2>Bloggen - Inlägg 2</h2>
-                <p>Elcyklar och solkraft</p>
+                <h2>Uppgift 2</h2>
+                <?php
+                $datum = date("d.M.Y");
+                print("<p>Dagens datum är: <br> " .$datum . "</p>");
+                // Arrays
+                $veckodag = array("Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag");
+                print("<p>Idag är det veckodag nummer: " . date("l")) . "</p>";
+                print("<p>Är det veckodag nummer " . date("m") . " då? </p>");
+                print("<p>veckodag nummer 1 betyder att det är " .$veckodag[1]. "</p>");
+                ?>
             </article>
 
         </section>
