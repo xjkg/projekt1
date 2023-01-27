@@ -3,4 +3,5 @@
 // phpinfo();
 
 /* Uppg 1 - Systemareorna och superglobals */
+
 print("<p>Servern snurrar på port " . $_SERVER['SERVER_PORT'] . ", som vanligt med https och apache.");

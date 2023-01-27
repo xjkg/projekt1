@@ -14,21 +14,7 @@
     <div id="container">
         <!-- Max 800px bred container-->
 
-        <header>
-            <!-- Logo och meny i headern -->
-            <img src="../media/logo.svg" alt="Website logo" />
-            <div id="logo">DenApp</div>
-
-            <nav>
-                <!-- Huvudmenyn -->
-                <ul>
-                    <li><a href="../home/">Home</a></li>
-                    <li><a href="../projekt1/">Projekt 1</a></li>
-                    <li><a href="../projekt2/">Projekt 2</a></li>
-                    <li><a href="../rapport/">Rapport</a></li>
-                </ul>
-            </nav>
-        </header>
+        <?php include "header.php"?>
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
@@ -36,7 +22,7 @@
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
                 <h2>Uppgift 1 - Superglobals</h2>
-                <?php include "uppg1.php" ?>
+                <?php include "uppg1.php" ?>       
             </article>
 
             <div class="separator"></div>
@@ -47,18 +33,23 @@
             </article>
 
             <article>
-                <h2>Uppgift 3 - Formulär</h2>
+                <h2>Uppgift 3 - Användarinmatning</h2>
                 <form action="index.php" method="get">
-                    Name: <input type="text" name="name"><br>
-                    E-mail: <input type="text" name="email"><br>
+                <br>Tid (m/d/yyyy): <input type="text" name="tid"><br>
                     <input type="submit">
                     <?php include "uppg3.php" ?>
                 </form>
 
+                <h2>Uppgift 4 - Registreringsformulär</h2>
                 <form action="index.php" method="get">
-                <br>Tid (m/d/yyyy): <input type="text" name="tid"><br>
+                    Name: <input type="text" name="name"><br>
+                    E-mail: <input type="text" name="email"><br>
                     <input type="submit">
-                    <?php include "uppg32.php" ?>
+                    <?php include "uppg4.php" ?>
+                </form>
+
+                <h2>Uppgift 5 - Cookies</h2>
+                    <?php include "uppg5.php" ?>
                 </form>
             </article>
         </section>
