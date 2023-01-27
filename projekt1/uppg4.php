@@ -1,4 +1,3 @@
-
 <?php
 if(!empty($_REQUEST["name"]) && isset($_REQUEST["email"])) {
 

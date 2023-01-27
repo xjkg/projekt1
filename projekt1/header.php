@@ -13,7 +13,7 @@
             <li><a href="../rapport/">Rapport</a></li>
             <?php
             if (isset($_SESSION["username"])) {
-                print("<li><a href='./profile.php/'>My profile</a></li>");
+                print("<li><a href='./profile.php/'>".$_SESSION["username"]."'s profile</a></li>");
             }
             ?>
         </ul>
