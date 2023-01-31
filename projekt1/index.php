@@ -14,7 +14,7 @@
     <div id="container">
         <!-- Max 800px bred container-->
 
-        <?php include "header.php"?>
+        <?php include "header.php" ?>
 
         <!-- Sektionen omringar artiklar (eg. blogposts)-->
         <section>
@@ -22,7 +22,7 @@
             <!-- Artiklar placerar sig snyggt nedanför varann-->
             <article>
                 <h2>Uppgift 1 - Superglobals</h2>
-                <?php include "uppg1.php" ?>       
+                <?php include "uppg1.php" ?>
             </article>
 
             <div class="separator"></div>
@@ -35,11 +35,12 @@
             <article>
                 <h2>Uppgift 3 - Användarinmatning</h2>
                 <form action="index.php" method="get">
-                <br>Tid (m/d/yyyy): <input type="text" name="tid"><br>
+                    <br>Tid (m/d/yyyy): <input type="text" name="tid"><br>
                     <input type="submit">
                     <?php include "uppg3.php" ?>
                 </form>
-
+            </article>
+            <article>
                 <h2>Uppgift 4 - Registreringsformulär</h2>
                 <form action="index.php" method="get">
                     Name: <input type="text" name="name"><br>
@@ -47,10 +48,16 @@
                     <input type="submit">
                     <?php include "uppg4.php" ?>
                 </form>
-
+            </article>
+            
+            <article>
                 <h2>Uppgift 5 - Cookies</h2>
-                    <?php include "uppg5.php" ?>
-                </form>
+                <?php include "uppg5.php" ?>
+            </article>
+
+            <article>
+                <h2>Uppgift 8 - Besöksräknare</h2>
+                <?php include "uppg8.php" ?>
             </article>
         </section>
 

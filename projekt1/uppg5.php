@@ -1,6 +1,5 @@
 <?php
 if(!isset($_COOKIE["time"])) {
-  print "Cookie time is not set!";
   $cookietime = date("j.n.Y, H:i");
   setcookie("time", $cookietime, time() + (86400), "/");
 } else {
