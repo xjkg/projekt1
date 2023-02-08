@@ -35,7 +35,7 @@
             <article>
                 <h2>Uppgift 3 - Användarinmatning</h2>
                 <form action="index.php" method="get">
-                    <br>Tid (m/d/yyyy): <input type="text" name="tid"><br>
+                    <br>Tid (d/m/yyyy): <input type="text" name="tid"><br>
                     <input type="submit">
                     <?php include "uppg3.php" ?>
                 </form>

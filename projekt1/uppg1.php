@@ -4,4 +4,8 @@
 
 /* Uppg 1 - Systemareorna och superglobals */
 
-print("<p>Servern snurrar på port " . $_SERVER['SERVER_PORT'] . ", som vanligt med https och apache.");
+print "Server: ".$_SERVER['SERVER_NAME'];
+print "<br>Server ip: ". $_SERVER['SERVER_ADDR'];
+print "<br>Apache version: ".apache_get_version();
+print "<br>User: ".get_current_user();
+print "<br>User ip: ".$_SERVER['REMOTE_ADDR'];

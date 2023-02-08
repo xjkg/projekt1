@@ -8,12 +8,12 @@ if(!empty($_REQUEST["tid"])){
     $split = explode("/", $tid);
 
     $tidnu = time();
-    print("Just nu är det " . date("l,M,Y", $tidnu));
+    print("Just nu är det " . date("j.n.Y", $tidnu));
 
-    $inmatadtid = date("l,M,Y", mktime(0,0,0,$split[0],$split[1],$split[2]));
+    $inmatadtid = date("l, j.n.Y", mktime(0,0,0,$split[1],$split[0],$split[2]));
     print("<br>Ditt datum är " . $inmatadtid ."<br> ");
 
-    $tidemellan = (time())-(mktime(0,0,0,$split[0],$split[1],$split[2]));
+    $tidemellan = (time())-(mktime(0,0,0,$split[1],$split[0],$split[2]));
     $s = $tidemellan%60;
     $m = floor(($tidemellan%3600)/60);
     $h = floor(($tidemellan%86400)/3600);

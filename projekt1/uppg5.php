@@ -1,6 +1,6 @@
 <?php
 if(!isset($_COOKIE["time"])) {
-  $cookietime = date("j.n.Y, H:i");
+  $cookietime = date("j.n.Y, H.i");
   setcookie("time", $cookietime, time() + (86400), "/");
 } else {
   if(isset($_SESSION["username"])) {

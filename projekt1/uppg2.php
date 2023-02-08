@@ -1,8 +1,10 @@
 <?php
-$datum = date("d.M.Y");
-print("<p>Dagens datum är: <br> " . $datum . "</p>");
+print("<p>Dagens datum: ".date("j.n.Y, H:i</p>"));
 // Arrays
-$veckodag = array("Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag");
-print ("<p>Idag är det veckodag nummer: " . date("l")) . "</p>";
-print("<p>Är det veckodag nummer " . date("m") . " då? </p>");
-print("<p>veckodag nummer 1 betyder att det är " . $veckodag[1] . "</p>");
+$month = array("test","Januari", "Februari", "Mars", "April", "Maj", "Juni", "Juli","Augusti", "September","November","December");
+$manad = $month[date("n")];
+
+$veckodag = array("test","Måndag", "Tisdag", "Onsdag", "Torsdag", "Fredag", "Lördag", "Söndag");
+$dag = $veckodag[date("N")];
+
+print($dag." den ".date("j ").$manad.", Vecka ".date("W"));
