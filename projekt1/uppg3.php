@@ -4,7 +4,7 @@ if(!empty($_REQUEST["tid"])){
 
     $tid = test_input($_REQUEST["tid"]);
     print("<p>Du matade in tiden " . $tid . "</p>");
-
+    $tid = str_replace(".","/",$tid);
     $split = explode("/", $tid);
 
     $tidnu = time();
@@ -17,12 +17,12 @@ if(!empty($_REQUEST["tid"])){
     $s = $tidemellan%60;
     $m = floor(($tidemellan%3600)/60);
     $h = floor(($tidemellan%86400)/3600);
-    $d = floor(($tidemellan%2592000)/86400);
+    $d = floor($tidemellan/86400);
     
     $s1 = abs($tidemellan)%60;
     $m1 = floor((abs($tidemellan)%3600)/60);
     $h1 = floor((abs($tidemellan)%86400)/3600);
-    $d1 = floor((abs($tidemellan)%2592000)/86400);
+    $d1 = floor(abs($tidemellan)/86400);
 
     if($tidemellan<0){
         print("Det är " . (abs($tidemellan)) . " sekunder tills det datumet<br>Det motsvarar:<br>Dygn: "
