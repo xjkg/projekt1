@@ -2,7 +2,7 @@
 
 //besöksräknaren
 $myfile = fopen("besok.txt", "a") or die("Unable to open file!");
-//short circuit evaluation är dåligt, använd throw/catch
+//short circuit evaluation^, använd throw/catch
 
 //skriv vem som besökte sidan
 $ip = $_SERVER['REMOTE_ADDR'];

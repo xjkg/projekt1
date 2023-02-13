@@ -49,7 +49,7 @@
                     <?php include "uppg4.php" ?>
                 </form>
             </article>
-            
+
             <article>
                 <h2>Uppgift 5 - Cookies</h2>
                 <?php include "uppg5.php" ?>
@@ -59,11 +59,23 @@
                 <h2>Uppgift 8 - Besöksräknare</h2>
                 <?php include "uppg8.php" ?>
             </article>
+
+            <article>
+                <h2>Uppgift 9 - Gästbok</h2>
+                <form action="index.php" method="get">
+                    <input class="inputbox" maxlength="20" type="text" name="namn" placeholder="Namn"><br>
+                    <input class="inputbox" maxlength="100" type="text" name="comment" placeholder="Skriv en kommentar"><br>
+                    <input type="submit">
+                </form>
+                <?php include "uppg9.php" ?>
+
+            </article>
+        
         </section>
 
         <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
         <footer>
-            Made by Dennis<sup>&#169;</sup>
+            Template by Dennis<sup>&#169;</sup>
         </footer>
 
     </div>
