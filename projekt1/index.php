@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Back-end template</title>
+    <title>JamApp</title>
     <link rel="stylesheet" href="../style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -35,7 +35,7 @@
             <article>
                 <h2>Uppgift 3 - Användarinmatning</h2>
                 <form action="index.php" method="get">
-                    <br>Tid (d/m/yyyy): <input type="text" name="tid"><br>
+                    Tid (d.m.yyyy): <input type="text" name="tid"><br>
                     <input type="submit">
                     <?php include "uppg3.php" ?>
                 </form>

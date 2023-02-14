@@ -7,5 +7,4 @@
 print "Server: ".$_SERVER['SERVER_NAME'];
 print "<br>Server ip: ". $_SERVER['SERVER_ADDR'];
 print "<br>Apache version: ".apache_get_version();
-print "<br>User: ".get_current_user();
 print "<br>User ip: ".$_SERVER['REMOTE_ADDR'];

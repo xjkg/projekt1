@@ -1,21 +1,5 @@
-Jamal - 13.2.2023, 21:30:32: Testar kommentarsfält
-Tester - 13.2.2023, 21:30:50: Testar också kommentarsfältet
-Guest - 13.2.2023, 21:31:02: Helt enkelt episkt kommentarsfält
-User - 13.2.2023, 21:36:46: Bytte till textarea
-
-
-ojnej
-Hejsan - 13.2.2023, 21:39:23: sldkjnsfdlkndsf
-
-sd
-sdfs
-f
-f
-
-
-sd
-gs
-
-d
-g
-sree
+Jamal - 14.2.2023, 12:15:38: Hejsan hejsan
+Test - 14.2.2023, 12:35:38: testkommentar
+Troll - 14.2.2023, 12:42:04: Get trolled
+Swag - 14.2.2023, 12:49:57: Yoooo
+wiktor - 14.2.2023, 13:16:51: fint jobbat!

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dennis Back-end template</title>
+    <title>JamApp</title>
     <link rel="stylesheet" href="../style.css">
     <script src="./script.js" defer></script>
 </head>
@@ -41,7 +41,7 @@
 
         <!-- Footern innehåller t.ex. somelänkar och kontaktuppg -->
         <footer>
-            Made by Dennis<sup>&#169;</sup>
+            Template by Dennis<sup>&#169;</sup>
         </footer>
 
     </div>
